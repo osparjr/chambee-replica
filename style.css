@@ -757,6 +757,6 @@ textarea {
   display: flex;
   justify-content: center;
 }
-body {
+/* body {
   min-width: 1160px;
-}
+} */
