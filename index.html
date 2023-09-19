@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- REMIX ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>I AM A WEB DEVELOPER</title>
+  </head>
+
+  <body>
+    <!-- TOP NAV -->
+    <div id="side-nav-mobile">
+      <div id="nav-list-mobile">
+        <ul>
+          <li><a href="#home">home</a></li>
+
+          <li><a href="menu.html">menu</a></li>
+
+          <li>
+            <a href="#packages">packages</a><i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li><a href="#branches">branches</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#franchise deck">franchise deck</a></li>
+          <li><a href="#contact us">contact us</a></li>
+        </ul>
+      </div>
+      <i onclick="closeMenu()" class="ri-close-line ri-2x"></i>
+    </div>
+    <div class="top-nav">
+      <div id="menu">
+        <i onclick="closeMenu()" class="ri-menu-fill ri-xl"></i>
+      </div>
+      <div class="logo">
+        <a href="#">
+          <img
+            src="https://chambee.com/wp-content/uploads/2020/07/logo-black.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div></div>
+
+      <div id="side-nav">
+        <div id="nav-list">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li>
+              <a href="#packages">packages</a
+              ><i class="ri-arrow-down-s-line"></i>
+            </li>
+            <li><a href="#branches">branches</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#franchise deck">franchise deck</a></li>
+            <li><a href="#contact us">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="banner">
+      <div class="beehive-bg">
+        <img src="/images/beehive.jpg" alt="" />
+      </div>
+      <div class="banner-text-wrapper">
+        <div class="banner-text">
+          <h1>“MADE FROM LIFE’S <span>BEE</span>AUTIFUL THINGS”</h1>
+
+          <p>#ChambeeTeaShop</p>
+        </div>
+      </div>
+
+      <div class="milktea-banner-img">
+        <img
+          id="banner-drinksnotitle"
+          src="/images/banner-drinksnotitle.png"
+          alt=""
+        />
+        <img
+          id="banner-drinksnotitle-mobile"
+          src="images/banner-drinksnotitle-mobile.png"
+          alt=""
+        />
+        <img id="banner-girl" src="images/banner-girl.png" alt="" />
+        <!-- <img id="banner-bg" src="images/banner-bg.jpg" alt=""> -->
+      </div>
+    </section>
+    <section class="video-container">
+      <div class="video-text">
+        <div class="title-with-description">
+          <h3>FUN. SWEET. AUTHENTIC.</h3>
+          <p>
+            Sweet Tawian milk tea specially made with imported ingredients to
+            provide you with a refreshingly premium milk tea experience. You’re
+            gonna love it.
+          </p>
+        </div>
+
+        <div class="chambee-logo">
+          <img src="/images/premiumMilkTea.png" alt="" />
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video-filter"></div>
+        <video
+          class="video-bg fill visible"
+          preload=""
+          playsinline=""
+          autoplay=""
+          muted=""
+          loop=""
+        >
+          <source
+            src="https://chambee.com/wp-content/uploads/2022/02/Chambee-Product-Loop-2.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
+    <section class="chambee-picture">
+      <div class="menu-wrapper">
+        <div class="chambee-pic-wrapper">
+          <img
+            src="https://chambee.com/wp-content/uploads/2021/03/chambee-1019x1024.jpg"
+            alt=""
+          />
+        </div>
+        <div class="menu-description">
+          <div class="chambee-text">
+            <h3>MADE FOR EVERY SWEET TOOTH.</h3>
+            <p>
+              Our wide range of flavors are carefully made into your favorite
+              milk tea concoction. From cheesecakes, coffee based frappes, and
+              fruits, name it!
+            </p>
+          </div>
+          <div class="chambee-menu">
+            <img
+              src="https://chambee.com/wp-content/uploads/2022/08/menuboard-118.5in-x-27.5in-icon.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="menu-btn">
+            <button>
+              <h4>VIEW OUR MENU</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="product">
+        <img
+          src="https://chambee.com/wp-content/uploads/2021/03/fruity-1251x1536.jpg"
+          alt=""
+        />
+        <img
+          src="https://chambee.com/wp-content/uploads/2021/03/BROWN-SUGAR-1252x1536.jpg"
+          alt=""
+        />
+        <img
+          src="https://chambee.com/wp-content/uploads/2021/03/premium--1246x1536.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="has-parallax">
+      <div class="background-image">
+        <img src="/images/table.jpg" />
+      </div>
+      <div class="image-wrapper">
+        <div class="description">
+          <h3>AWESOME FRANCHISE PACKAGES.</h3>
+          <p>
+            <strong>BEE</strong> part of our growing family. Check out our
+            franchise packages and franchise with us today!
+          </p>
+          <div class="menu-btn">
+            <button>
+              <h4>VIEW PACKAGES</h4>
+            </button>
+          </div>
+        </div>
+        <img
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          src="https://chambee.com/wp-content/uploads/2020/07/kiosk-front.png"
+          class="foreground"
+        />
+      </div>
+    </section>
+    <section class="form-contact">
+      <div class="form-contact-wrapper">
+        <div class="contact">
+          <img
+            id="bottom-logo"
+            src="https://chambee.com/wp-content/uploads/2020/07/bottomlogo.png"
+            alt=""
+          />
+          <ul>
+            <li id="contact-items">
+              <img
+                src="https://chambee.com/wp-content/uploads/2020/07/icon-call.png"
+                alt=""
+              />
+              <p>+63 922 912 3422</p>
+            </li>
+            <li id="contact-items">
+              <img
+                src="https://chambee.com/wp-content/uploads/2020/07/icon-call.png"
+                alt=""
+              />
+              <p>+63 915 460 2651</p>
+            </li>
+            <li id="contact-items">
+              <img
+                src="https://chambee.com/wp-content/uploads/2020/07/icon-mail.png"
+                alt=""
+              />
+              <p>info@chambee.ph</p>
+            </li>
+            <li id="contact-items">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="#000"
+                  d="M8.998 16h-2.998v-8h-2v-2.757l2-0.001-0.003-1.624c0-2.249 0.61-3.618 3.259-3.618h2.206v2.758h-1.379c-1.032 0-1.081 0.385-1.081 1.104l-0.004 1.38h2.48l-0.292 2.757-2.185 0.001-0.002 8z"
+                ></path>
+              </svg>
+              <p>facebook.com/ Chambee Philippines</p>
+            </li>
+            <li id="contact-items">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="#000"
+                  d="M13.344 0h-10.688c-1.461 0-2.656 1.195-2.656 2.656v10.688c0 1.461 1.195 2.656 2.656 2.656h10.688c1.461 0 2.656-1.195 2.656-2.656v-10.688c0-1.461-1.195-2.656-2.656-2.656zM5.122 7h5.756c0.109 0.313 0.169 0.65 0.169 1 0 1.68-1.367 3.047-3.047 3.047s-3.047-1.367-3.047-3.047c0-0.35 0.060-0.687 0.169-1zM14 7.001v5.999c0 0.55-0.45 1-1 1h-10c-0.55 0-1-0.45-1-1v-6h1.564c-0.073 0.322-0.111 0.657-0.111 1 0 2.507 2.040 4.547 4.547 4.547s4.547-2.040 4.547-4.547c0-0.343-0.039-0.678-0.111-1l1.564 0.001zM14 3.5c0 0.275-0.225 0.5-0.5 0.5h-1c-0.275 0-0.5-0.225-0.5-0.5v-1c0-0.275 0.225-0.5 0.5-0.5h1c0.275 0 0.5 0.225 0.5 0.5v1z"
+                ></path>
+              </svg>
+              <p>instagram.com/ chambeeteashop/</p>
+            </li>
+            <li id="contact-items">
+              <img
+                src="	https://chambee.com/wp-content/uploads/2020/07/icon-loc.png"
+                alt=""
+              />27 Bayani Road l28 B69 AFPOVAI Western Bicutan, Taguig, Metro
+              Manila, Philippines 1630
+            </li>
+            <hr />
+
+            <p>Google Maps link:</p>
+            <p>https://goo.gl/maps/fkUMFbD6TMUxY7VW6</p>
+          </ul>
+        </div>
+        <div class="form">
+          <p>Fields marked with an <span>* </span> are required</p>
+          <label for="name">Name <span>*</span></label>
+          <input required type="text" name="name" id="name" />
+          <label for="email">Email <span>*</span></label>
+          <input type="email" name="email" id="email" />
+          <label for="contact-number">Contact Number <span>*</span></label>
+          <input type="number" name="contact-number" id="contact-number" />
+          <label for="message">Message <span>*</span></label>
+          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          <button id="inquiry-btn">SEND INQUIRY</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <p>
+          Copyright 2023 © <strong>Chambee Tea Shop</strong> | Website by
+          <a href="https://rocksolidstudio.pro">Rocksolid Creatives</a> |
+          Maintained by
+          <a href="https://www.facebook.com/dhell.barquio08"
+            ><i>Ahrdhell</i> - Design Gallery.</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

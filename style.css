@@ -1,0 +1,762 @@
+:root {
+  --color-name: #7fc29b;
+  --main-color: #1b263b;
+}
+
+/* GOOGLE FONTS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: banner-font;
+  src: url(fonts/JandaManateeSolid.ttf);
+}
+#side-nav {
+  display: flex;
+}
+
+#nav-list ul {
+  justify-content: flex-start;
+}
+#side-nav-mobile {
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: #04040485;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  background-color: #ffcf01;
+  position: relative;
+}
+
+#menu {
+  color: #717171;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.logo {
+  margin-bottom: -5px;
+}
+
+.logo img {
+  transition: ease 0.2s;
+  max-width: 280px;
+}
+
+.banner-text {
+  position: absolute;
+  display: block;
+  width: 50%;
+  margin: 20px 15px 15px 20px;
+}
+.banner-text h1 {
+  font-family: banner-font;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.banner {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.banner p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: medium;
+  text-transform: none;
+
+  color: #7e7e7e;
+}
+
+.banner span {
+  color: #ffcf01;
+  font-family: banner-font;
+  text-transform: uppercase;
+}
+
+.milktea-banner-img {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  align-items: self-end;
+  height: auto;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+#banner-bg {
+  z-index: -1;
+  position: absolute;
+  margin-left: -120px;
+  margin-top: 80px;
+  max-width: 150%;
+}
+
+#banner-drinksnotitle-mobile {
+  width: 90%;
+  height: auto;
+  margin-left: 20px;
+}
+#banner-drinksnotitle {
+  display: none;
+}
+#banner-girl {
+  display: none;
+  z-index: 1;
+  max-width: 55%;
+  height: auto;
+}
+
+.beehive-bg img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#nav-list {
+  font-size: 15px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+#nav-list li {
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+
+#nav-list ul {
+  display: flex;
+  flex-direction: column;
+}
+#nav-list i {
+  filter: invert(100%) brightness(80%);
+  text-align: right;
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+  font-weight: 600;
+}
+#nav-list a:hover {
+  color: #adadad;
+}
+#side-nav-mobile > i {
+  padding: 30px 10px 15px 15px;
+  width: 100%;
+  text-align: right;
+  filter: invert(100%) brightness(80%);
+}
+#nav-list-mobile ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#nav-list-mobile li:nth-child(3) {
+  flex-direction: row;
+  justify-content: space-between;
+}
+#nav-list-mobile a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 400;
+}
+#nav-list-mobile li {
+  text-decoration: none;
+  list-style: none;
+  padding: 15px;
+  border-bottom: rgb(83, 83, 83) 1px solid;
+}
+#nav-list-mobile i {
+  filter: invert(100%) brightness(80%);
+  width: 0;
+  padding-right: 10px;
+}
+#nav-list-mobile {
+  padding-top: 40px;
+  background-color: #000000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 250px;
+  min-width: 20%;
+  height: 100%;
+  text-transform: uppercase;
+  z-index: 3000;
+}
+
+span {
+  color: var(--main-color);
+}
+
+#side-nav {
+  display: none;
+  color: #adadad;
+}
+
+.video-text {
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.video-text h3 {
+  text-shadow: 5px 5px 15px #292929;
+  color: #ffd323;
+  z-index: 4;
+  position: relative;
+  font-family: banner-font;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  top: 0;
+}
+
+.video-text p {
+  width: 100%;
+  z-index: 4;
+  color: #f3f3f3;
+  font-size: 1rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+}
+
+.chambee-text {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.chambee-text h3 {
+  z-index: 4;
+  position: relative;
+  font-family: banner-font;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  top: 0;
+}
+
+.chambee-text p {
+  width: 100%;
+  z-index: 4;
+  color: #2f2f2f;
+  font-size: 15px;
+  position: relative;
+}
+
+.video-filter {
+  opacity: 50%;
+  z-index: 3;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.video video {
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+.chambee-logo img {
+  position: relative;
+  margin-top: 3.5rem;
+  width: 30%;
+  height: auto;
+  z-index: 4;
+}
+#side-nav:active {
+  transition: ease-in 1s;
+}
+
+.chambee-picture img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 5px 10px #969696;
+}
+
+.chambee-menu img {
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.chambee-picture {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 1.5em;
+}
+
+.chambee-pic-wrapper {
+  padding: 20px 70px 10px 70px;
+
+  width: 100%;
+  height: auto;
+}
+
+.menu-btn button {
+  border-style: none;
+  background-color: #000000;
+  color: #f3f3f3;
+  font-weight: bold;
+  font-size: 18px;
+  font-stretch: extra-expanded;
+  padding: 8px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+.menu-btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.products {
+  display: flex;
+  justify-content: center;
+}
+.product {
+  max-width: 1180px;
+}
+.products img {
+  width: 100%;
+  height: auto;
+
+  padding: 20px 15px 0px 15px;
+}
+
+.has-parallax {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  padding: 40px;
+  padding-top: 0;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+}
+
+.background-image img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.description {
+  margin: 10px;
+  height: auto;
+  background-color: #ffd323;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.description h3 {
+  color: #2f2f2f;
+  position: relative;
+  font-family: banner-font;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  top: 0;
+}
+
+.form-contact {
+  background-color: #ffd323;
+}
+
+#contact-items {
+  display: flex;
+  gap: 10px;
+}
+
+#contact-items img,
+svg {
+  width: 30px;
+  height: 100%;
+}
+.contact #bottom-logo {
+  max-width: 60%;
+  height: 100%;
+}
+.contact li {
+  padding: 5px;
+}
+
+.contact img {
+  width: 100%;
+}
+
+.contact {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-contact {
+}
+
+.form {
+  background-color: #fff0b2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  gap: 15px;
+  box-shadow: #a2a2a2 0.1px 0.2px 4px;
+}
+
+.form p {
+  color: #8d8d8d;
+}
+
+.form span {
+  color: red;
+  font-size: small;
+}
+
+.form input,
+textarea {
+  border-style: none;
+  box-shadow: #9c9c9c 0.2px 0.2px 2px inset;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 10px;
+}
+
+#inquiry-btn {
+  text-align: left;
+  font-weight: 600;
+  color: #7e7e7e;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  max-width: 100%;
+  font-size: 1.1rem;
+}
+
+.footer-wrapper p {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #7e7e7e;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+@media (min-width: 550px) {
+  body {
+    min-width: 650px;
+  }
+  .logo img {
+    max-width: 240px;
+    transition: ease-in 0.2s;
+  }
+  #banner-drinksnotitle-mobile {
+    display: none;
+  }
+  #banner-drinksnotitle {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 3;
+  }
+  #banner-girl {
+    position: absolute;
+    right: 0;
+    display: block;
+    z-index: 1;
+    max-width: 30%;
+    height: auto;
+  }
+  .banner-text {
+    font-family: banner-font;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 3.5vw;
+    line-height: 1.2;
+  }
+  .banner-text-wrapper {
+    border: #000000 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .banner p {
+    font-weight: 100;
+    font-size: 100%;
+    text-transform: none;
+
+    color: #7e7e7e;
+  }
+  .video-container {
+    display: flex;
+
+    align-items: center;
+    position: relative;
+    margin-top: -20px;
+    z-index: 1;
+  }
+  .video {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .video video {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+  }
+  .video-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  .title-with-description {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .chambee-logo {
+    text-align: right;
+  }
+  .chambee-logo img {
+    position: relative;
+    width: 70%;
+    margin-top: 0;
+    z-index: 4;
+  }
+  .menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chambee-picture img {
+    min-width: 200px;
+    height: auto;
+    box-shadow: 0px 5px 10px #969696;
+  }
+  .product {
+    display: flex;
+  }
+  .product img {
+    min-width: 100px;
+    height: auto;
+  }
+  .image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .description {
+    margin: 10px;
+    height: auto;
+    background-color: #ffd323;
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  .description h3 {
+    color: #2f2f2f;
+    position: relative;
+    font-family: banner-font;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    top: 0;
+  }
+  .image-wrapper img {
+    width: 50%;
+  }
+  .form-contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -10px;
+    width: 100%;
+    padding: 60px;
+  }
+
+  .form,
+  .contact {
+    width: 100%;
+    height: 100%;
+  }
+  .contact #bottom-logo {
+    width: 300px;
+    height: auto;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-items img,
+  svg {
+    width: 30px;
+    height: 100%;
+  }
+}
+@media (min-width: 850px) {
+  #side-nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #side-nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  .top-nav {
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  body {
+    min-width: 1160px;
+  }
+  .has-parallax {
+    height: auto;
+  }
+  .video-text {
+    justify-content: center;
+  }
+  .title-with-description,
+  .chambee-logo {
+    max-width: 30%;
+  }
+  .chambee-picture {
+    display: flex;
+    justify-content: center;
+  }
+  .chambee-pic-wrapper {
+    padding-left: 0;
+  }
+  .menu-wrapper {
+    max-width: 1020px;
+  }
+}
+@media (max-width: 360px) {
+  .logo img {
+    width: 100%;
+    height: auto;
+    padding-right: 20px;
+  }
+}
+
+/* ____________Menu CSS______________ */
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.menu-section h1 {
+  font-size: 46px;
+  text-transform: uppercase;
+  font-family: banner-font;
+  padding: 30px;
+}
+.menu-container {
+  display: flex;
+
+  justify-content: center;
+}
+.menu-images img {
+  width: 60%;
+  height: auto;
+  padding-bottom: 10px;
+}
+.menu-video {
+  max-width: 60%;
+  height: auto;
+  object-fit: fill;
+}
+.menu-video video {
+  max-width: 60%;
+}
+
+.menu-video-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body {
+  min-width: 1160px;
+}
